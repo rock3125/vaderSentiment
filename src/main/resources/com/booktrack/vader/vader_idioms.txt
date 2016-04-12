@@ -1,0 +1,91 @@
+the shit,3.0
+the bomb,3.0
+bad ass,1.5
+yeah right,-2.0
+cut the mustard,2.0
+kiss of death,-1.5
+hand to mouth,-2.0
+back handed,-2.0
+blow smoke,-2.0
+blowing smoke,-2.0
+upper hand,1.0
+break a leg,2.0
+cooking with gas,2.0
+in the black,2.0
+in the red,-2.0
+on the ball,2.0
+under the weather,-2.0
+cap in hand,-1.5
+foots the bill,-2.0
+head in the sand,-2.0
+hopping mad,-3.0
+burining a hole,-2.0
+see eye to eye,2.0
+seeing eye to eye,2.0
+saw eye to eye,2.0
+sit on the fence,-1.5
+back to square one,-1.5
+icing on the cake,2.0
+fight like cat and dog,-3.0
+fighting like cats and dogs,-3.0
+donkey work,-2.0
+weep buckets,-2.0
+cry buckets,-2.0
+take the cake,2.0
+first lady,2.0
+from hell,-3.0
+fallen off the radar,-1.0
+cool with that,2.0
+float my boat,-2.0
+big time,3.0
+like a rash,-1.5
+like a bad rash,-2.0
+keen as mustard,2.0
+thick as thieves,2.0
+quick as a flash,2.0
+stubborn as a mule,-2.0
+working like a dog,-1.0
+face like thunder,-2.0
+dribs and drabs,-1.0
+blood sweat and tears,1.0
+waxed and waned,-1.0
+love and war,-1.5
+rains but it pours,-2.0
+rains it pours,-2.0
+two to tango,-1.5
+broken up,-2.0
+nothing ventured,2.0
+nothing gained,2.0
+silver lining,2.0
+spice of life,2.0
+mother of invention,2.0
+four letter words,-2.0
+playing the field,1.0
+bun in the oven,1.0
+number was up,-1.5
+breathe my last,-1.5
+six feet under,-2.0
+good riddance,-1.5
+take it easy,1.5
+so far so good,1.0
+give me a break,-1.5
+taken aback,-2.0
+left high and dry,-2.0
+wind out of her sails,-2.0
+wind out of his sails,-2.0
+wind out of my sails,-2.0
+wind out of their sails,-2.0
+wind out of your sails,-2.0
+shell shocked,-2.5
+on the warpath,-2.5
+come out fighting,-2.5
+beats a retreat,-2.0
+call to arms,-3.0
+flying high,2.0
+seat of his pants,-1.0
+seat of her pants,-1.0
+seat of their pants,-1.0
+seat of your pants,-1.0
+on autopilot,1.0
+took a nosedive,-1.5
+come to a standstill,-1.5

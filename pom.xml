@@ -1,0 +1,162 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.booktrack</groupId>
+  <artifactId>vader</artifactId>
+  <packaging>jar</packaging>
+  <version>0.1-SNAPSHOT</version>
+  <name>vader</name>
+  <description>VADER Sentiment Analysis. VADER (Valence Aware Dictionary and sEntiment Reasoner)</description>
+  <url>https://github.com/cjhutto/vaderSentiment</url>
+  <licenses>
+    <license>
+      <name>The MIT License (MIT)</name>
+      <url>https://github.com/cjhutto/vaderSentiment/blob/master/LICENSE.txt</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+  <developers>
+    <developer>
+      <id>peter3125</id>
+      <name>Rock de Vocht</name>
+      <email>peter@peter.co.nz</email>
+    </developer>
+  </developers>
+
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+
+        <slf4j.version>1.7.10</slf4j.version>
+        <log4j.version>2.2</log4j.version>
+        <open.nlp.version>1.5.3</open.nlp.version>
+
+    </properties>
+
+
+  <build>
+
+    <plugins>
+
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-compiler-plugin</artifactId>
+            <version>3.5.1</version>
+            <configuration>
+                <encoding>UTF-8</encoding>
+                <source>1.8</source>
+                <target>1.8</target>
+            </configuration>
+        </plugin>
+
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-shade-plugin</artifactId>
+            <version>2.4.3</version>
+            <executions>
+                <execution>
+                    <phase>package</phase>
+                    <goals>
+                        <goal>shade</goal>
+                    </goals>
+                    <configuration>
+                        <transformers>
+                            <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
+                                <mainClass>com.booktrack.vader.Main</mainClass>
+                            </transformer>
+                        </transformers>
+                    </configuration>
+                </execution>
+            </executions>
+        </plugin>
+
+
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>appassembler-maven-plugin</artifactId>
+        <version>1.3.1</version>
+        <configuration>
+          <programs>
+            <program>
+              <mainClass>com.booktrack.vader.Main</mainClass>
+              <name>vader</name>
+            </program>
+            <program>
+              <mainClass>com.booktrack.vader.Main</mainClass>
+              <name>vader</name>
+            </program>
+          </programs>
+        </configuration>
+
+      </plugin>
+    </plugins>
+
+  </build>
+
+  <dependencies>
+
+    <!-- unit testing -->
+    <dependency>
+        <groupId>junit</groupId>
+        <artifactId>junit</artifactId>
+        <version>4.12</version>
+        <scope>test</scope>
+    </dependency>
+
+    <!-- command line parsing -->
+    <dependency>
+        <groupId>commons-cli</groupId>
+        <artifactId>commons-cli</artifactId>
+        <version>1.3.1</version>
+    </dependency>
+
+    <!-- io helpers -->
+    <dependency>
+        <groupId>commons-io</groupId>
+        <artifactId>commons-io</artifactId>
+        <version>2.4</version>
+    </dependency>
+
+    <!-- logging -->
+    <dependency>
+        <groupId>org.slf4j</groupId>
+        <artifactId>slf4j-api</artifactId>
+        <version>${slf4j.version}</version>
+    </dependency>
+
+    <dependency>
+        <groupId>org.slf4j</groupId>
+        <artifactId>jcl-over-slf4j</artifactId>
+        <version>${slf4j.version}</version>
+    </dependency>
+
+    <dependency>
+        <groupId>org.apache.logging.log4j</groupId>
+        <artifactId>log4j-slf4j-impl</artifactId>
+        <version>${log4j.version}</version>
+    </dependency>
+
+    <dependency>
+        <groupId>org.apache.logging.log4j</groupId>
+        <artifactId>log4j-core</artifactId>
+        <version>${log4j.version}</version>
+    </dependency>
+
+    <dependency>
+        <groupId>org.apache.logging.log4j</groupId>
+        <artifactId>log4j-api</artifactId>
+        <version>${log4j.version}</version>
+    </dependency>
+
+    <!-- open-nlp -->
+    <dependency>
+        <groupId>org.apache.opennlp</groupId>
+        <artifactId>opennlp-tools</artifactId>
+        <version>${open.nlp.version}</version>
+    </dependency>
+
+  </dependencies>
+
+</project>
+
+
