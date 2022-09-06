@@ -29,7 +29,7 @@
 
         <slf4j.version>1.7.10</slf4j.version>
         <log4j.version>[2.13.2,)</log4j.version>
-        <open.nlp.version>1.5.3</open.nlp.version>
+        <open.nlp.version>1.9.4</open.nlp.version>
 
     </properties>
 
